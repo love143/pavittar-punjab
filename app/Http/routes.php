@@ -11,6 +11,18 @@
 |
 */
 
-Route::get('/', function () {
-    return view('homepage');
-});
+Route::get('/', 'MainController@index');
+
+Route::get('/about-us', 'MainController@AboutUs');
+
+Route::get('/contact', 'MainController@Contact');
+
+Route::get('/hott', 'MainController@Hott');
+
+Route::get('/songs', 'MainController@songs');
+
+Route::get('/videos', 'MainController@videos');
+
+Route::get('/sign-in', 'MainController@sign_in');
+
+Route::get('/register', 'MainController@Register');
